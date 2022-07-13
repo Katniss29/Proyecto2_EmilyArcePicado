@@ -28,6 +28,9 @@ namespace PROYECTO2_EmilyArcePicado
                 Administrativa oAdministrativa = new Administrativa();
                 oAdministrativa.Show();
             }
+            else 
+            {
+                MessageBox.Show("El usuario no existe");            }
 
 
         }
