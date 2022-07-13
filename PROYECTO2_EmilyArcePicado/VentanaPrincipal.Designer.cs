@@ -58,6 +58,7 @@
             this.btnAdministrativa.TabIndex = 1;
             this.btnAdministrativa.Text = "ADMINISTRATIVA";
             this.btnAdministrativa.UseVisualStyleBackColor = false;
+            this.btnAdministrativa.Click += new System.EventHandler(this.btnAdministrativa_Click);
             // 
             // lbVentanaPrincipal
             // 

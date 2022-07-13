@@ -23,5 +23,12 @@ namespace PROYECTO2_EmilyArcePicado
         {
 
         }
+
+        private void btnAdministrativa_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login oLogin = new Login();
+            oLogin.Show();
+        }
     }
 }
