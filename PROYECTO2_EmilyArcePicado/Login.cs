@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using capaDatos;
+using Npgsql;
 
 namespace PROYECTO2_EmilyArcePicado
 {
@@ -19,10 +21,14 @@ namespace PROYECTO2_EmilyArcePicado
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            String usuario, contraseña;
-            usuario = txtUsuario.Text;
-            contraseña = txtContraseña.Text;
-            if (usuario == "Emily" && contraseña == "12345")
+           
+            CONEXION.conectarPostgresSQL();
+            String consulta = "select * from usuarios where usuario = '"+txtUsuario.Text+"' and contrasena = '"+txtContraseña.Text+"'";
+            NpgsqlCommand comando = new NpgsqlCommand(consulta, CONEXION.conexion);
+            NpgsqlDataReader lector;
+            lector = comando.ExecuteReader();
+            
+            if (lector.HasRows == true)
             {
                 this.Hide();
                 Administrativa oAdministrativa = new Administrativa();
@@ -30,9 +36,9 @@ namespace PROYECTO2_EmilyArcePicado
             }
             else 
             {
-                MessageBox.Show("El usuario no existe");            }
-
-
+                MessageBox.Show("El usuario no existe");     
+            }
+            CONEXION.desconectarPostgresSQL();
         }
 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
