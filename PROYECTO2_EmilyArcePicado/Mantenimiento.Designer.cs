@@ -57,6 +57,7 @@
             this.btnDeducciones.TabIndex = 4;
             this.btnDeducciones.Text = "MANTENIMIENTO DE LAS DEDUCCIONES";
             this.btnDeducciones.UseVisualStyleBackColor = true;
+            this.btnDeducciones.Click += new System.EventHandler(this.btnDeducciones_Click);
             // 
             // btnHorarios
             // 

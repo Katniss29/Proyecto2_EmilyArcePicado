@@ -198,5 +198,10 @@ namespace PROYECTO2_EmilyArcePicado
                 MessageBox.Show("ERROR, NO SE LOGRO ELIMINAR EL DEPARTAMENTO");
             }
         }
+
+        private void CrudDepartamentos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

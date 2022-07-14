@@ -57,5 +57,12 @@ namespace PROYECTO2_EmilyArcePicado
             CrudHorarios oCrudHorarios = new CrudHorarios();
             oCrudHorarios.Show();
         }
+
+        private void btnDeducciones_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CrudDeducciones oCrudDeducciones = new CrudDeducciones();
+            oCrudDeducciones.Show();
+        }
     }
 }
