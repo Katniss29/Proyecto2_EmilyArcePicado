@@ -31,8 +31,10 @@ namespace PROYECTO2_EmilyArcePicado
 
                 if (lector.HasRows == true)
                 {
-                    
-                    Application.Exit();
+
+                    this.Hide();
+                    VentanaPrincipal oVentanaPrincipal = new VentanaPrincipal();
+                    oVentanaPrincipal.Show();
                 }
                 else
                 {

@@ -59,5 +59,10 @@ namespace PROYECTO2_EmilyArcePicado
             VentanaPrincipal oVentanaPrincipal = new VentanaPrincipal();
             oVentanaPrincipal.Show();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

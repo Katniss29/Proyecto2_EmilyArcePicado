@@ -220,5 +220,12 @@ namespace PROYECTO2_EmilyArcePicado
             }
             
         }
+
+        private void CrudEmpleados_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            Mantenimiento oMantenimiento = new Mantenimiento();
+            oMantenimiento.Show();
+        }
     }
 }

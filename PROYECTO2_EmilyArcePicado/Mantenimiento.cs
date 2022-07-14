@@ -15,12 +15,14 @@ namespace PROYECTO2_EmilyArcePicado
         public Mantenimiento()
         {
             InitializeComponent();
-           
+            Bitmap img = new Bitmap(Application.StartupPath + @"\img\fondo1.jpg");
+            this.BackgroundImage = img;
+
         }
 
         private void MANTENIMIENTO_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnMantenimientoEmpleados_Click(object sender, EventArgs e)
@@ -28,6 +30,13 @@ namespace PROYECTO2_EmilyArcePicado
             this.Hide();
             CrudEmpleados oCrudEmpleados = new CrudEmpleados();
             oCrudEmpleados.Show();
+        }
+
+        private void Mantenimiento_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            Administrativa oAdministrativa = new Administrativa();
+            oAdministrativa.Show();
         }
     }
 }
