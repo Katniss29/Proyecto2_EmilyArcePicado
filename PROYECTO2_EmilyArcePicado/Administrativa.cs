@@ -39,16 +39,13 @@ namespace PROYECTO2_EmilyArcePicado
 
 
 
-        private void Administrativa_Load(object sender, EventArgs e)
+      
+
+        private void btnSeguridad_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Seguridad oSeguridad = new Seguridad();
+            oSeguridad.Show();
         }
-
-        private void btnProcesosEspecificos_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
     }
 }

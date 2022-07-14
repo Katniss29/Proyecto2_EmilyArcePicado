@@ -187,5 +187,17 @@ namespace PROYECTO2_EmilyArcePicado
                 MessageBox.Show("NO SE LOGRO MODIFICAR EL REGISTRO");
             }
         }
+
+        private void CrudHorarios_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CrudHorarios_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            Administrativa oAdministrativa = new Administrativa();
+            oAdministrativa.Show();
+        }
     }
 }

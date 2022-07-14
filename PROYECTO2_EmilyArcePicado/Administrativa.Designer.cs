@@ -44,7 +44,7 @@
             this.btnProcesosEspecificos.TabIndex = 1;
             this.btnProcesosEspecificos.Text = "PROCESOS ESPECIFICOS";
             this.btnProcesosEspecificos.UseVisualStyleBackColor = true;
-            this.btnProcesosEspecificos.Click += new System.EventHandler(this.btnProcesosEspecificos_Click);
+           
             // 
             // btnSeguridad
             // 
@@ -56,6 +56,7 @@
             this.btnSeguridad.TabIndex = 2;
             this.btnSeguridad.Text = "SEGURIDAD";
             this.btnSeguridad.UseVisualStyleBackColor = true;
+            this.btnSeguridad.Click += new System.EventHandler(this.btnSeguridad_Click);
             // 
             // label1
             // 
@@ -94,7 +95,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADMINISTRATIVA";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Administrativa_FormClosing);
-            this.Load += new System.EventHandler(this.Administrativa_Load);
+         
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -44,9 +44,9 @@
             this.lbCodigo = new System.Windows.Forms.Label();
             this.btnMostrarHorarios = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lbMantenimientoDiasFeriados = new System.Windows.Forms.Label();
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbMantenimientoDiasFeriados = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -223,18 +223,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(303, 150);
             this.dataGridView1.TabIndex = 56;
             // 
-            // lbMantenimientoDiasFeriados
-            // 
-            this.lbMantenimientoDiasFeriados.AutoSize = true;
-            this.lbMantenimientoDiasFeriados.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMantenimientoDiasFeriados.ForeColor = System.Drawing.Color.Black;
-            this.lbMantenimientoDiasFeriados.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
-            this.lbMantenimientoDiasFeriados.Location = new System.Drawing.Point(462, 9);
-            this.lbMantenimientoDiasFeriados.Name = "lbMantenimientoDiasFeriados";
-            this.lbMantenimientoDiasFeriados.Size = new System.Drawing.Size(288, 23);
-            this.lbMantenimientoDiasFeriados.TabIndex = 55;
-            this.lbMantenimientoDiasFeriados.Text = "MANTENIMIENTO HORARIOS";
-            // 
             // clmCodigo
             // 
             this.clmCodigo.HeaderText = "CODIGO";
@@ -248,6 +236,18 @@
             this.clmNombre.MinimumWidth = 6;
             this.clmNombre.Name = "clmNombre";
             this.clmNombre.Width = 125;
+            // 
+            // lbMantenimientoDiasFeriados
+            // 
+            this.lbMantenimientoDiasFeriados.AutoSize = true;
+            this.lbMantenimientoDiasFeriados.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMantenimientoDiasFeriados.ForeColor = System.Drawing.Color.Black;
+            this.lbMantenimientoDiasFeriados.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
+            this.lbMantenimientoDiasFeriados.Location = new System.Drawing.Point(462, 9);
+            this.lbMantenimientoDiasFeriados.Name = "lbMantenimientoDiasFeriados";
+            this.lbMantenimientoDiasFeriados.Size = new System.Drawing.Size(288, 23);
+            this.lbMantenimientoDiasFeriados.TabIndex = 55;
+            this.lbMantenimientoDiasFeriados.Text = "MANTENIMIENTO HORARIOS";
             // 
             // CrudHorarios
             // 
@@ -274,6 +274,8 @@
             this.Name = "CrudHorarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MANTENIMIENTO HORARIOS";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CrudHorarios_FormClosing);
+            this.Load += new System.EventHandler(this.CrudHorarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
