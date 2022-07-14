@@ -215,5 +215,13 @@ namespace PROYECTO2_EmilyArcePicado
                 MessageBox.Show("ERROR, NO SE LOGRO ELIMINAR EL DEPARTAMENTO");
             }
         }
+
+        private void CrudDeducciones_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            Mantenimiento oMantenimiento = new Mantenimiento();
+            oMantenimiento.Show();
+
+        }
     }
 }

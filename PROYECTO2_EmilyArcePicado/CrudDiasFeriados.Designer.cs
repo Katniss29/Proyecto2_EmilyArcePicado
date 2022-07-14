@@ -273,6 +273,8 @@
             this.Name = "CrudDiasFeriados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CrudDiasFeriados";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CrudDiasFeriados_FormClosing);
+            this.Load += new System.EventHandler(this.CrudDiasFeriados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

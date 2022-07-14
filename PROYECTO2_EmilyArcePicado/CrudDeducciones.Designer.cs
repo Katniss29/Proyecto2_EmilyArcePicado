@@ -427,6 +427,7 @@
             this.Controls.Add(this.lbMantenimientoDiasFeriados);
             this.Name = "CrudDeducciones";
             this.Text = "MANTENIMINETO DE DEDUCCIONES";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CrudDeducciones_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -66,6 +66,7 @@ namespace PROYECTO2_EmilyArcePicado
             return datosCorrectos;
         }
 
+        //button that is responsible for creating new users
         private void btnCreacion_Click(object sender, EventArgs e)
         {
             try

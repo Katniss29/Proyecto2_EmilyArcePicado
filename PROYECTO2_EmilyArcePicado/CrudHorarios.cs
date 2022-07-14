@@ -196,8 +196,8 @@ namespace PROYECTO2_EmilyArcePicado
         private void CrudHorarios_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
-            Administrativa oAdministrativa = new Administrativa();
-            oAdministrativa.Show();
+            Mantenimiento oMantenimiento = new Mantenimiento();
+            oMantenimiento.Show();
         }
     }
 }

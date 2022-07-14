@@ -188,5 +188,17 @@ namespace PROYECTO2_EmilyArcePicado
                 MessageBox.Show("ERROR");
             }
         }
+
+        private void CrudDiasFeriados_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CrudDiasFeriados_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            Mantenimiento oMantenimiento = new Mantenimiento();
+            oMantenimiento.Show();
+        }
     }
 }
