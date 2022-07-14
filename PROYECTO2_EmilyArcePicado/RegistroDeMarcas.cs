@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace PROYECTO2_EmilyArcePicado
 {
-    public partial class Form1 : Form
+    public partial class RegistroDeMarcas : Form
     {
-        public Form1()
+        public RegistroDeMarcas()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void RegistroDeMarcas_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            LOGINSALIDA oLoginSalida = new LOGINSALIDA();
+            oLoginSalida.Show();
         }
     }
 }

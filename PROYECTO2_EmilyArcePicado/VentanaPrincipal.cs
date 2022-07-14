@@ -30,5 +30,12 @@ namespace PROYECTO2_EmilyArcePicado
             Login oLogin = new Login();
             oLogin.Show();
         }
+
+        private void btnRegistroDeMarcas_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistroDeMarcas oRegistroDeMarcas = new RegistroDeMarcas();
+            oRegistroDeMarcas.Show();
+        }
     }
 }

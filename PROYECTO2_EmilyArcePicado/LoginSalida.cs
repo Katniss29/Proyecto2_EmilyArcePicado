@@ -7,19 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using capaDatos;
 using Npgsql;
+using capaDatos;
 
 namespace PROYECTO2_EmilyArcePicado
 {
-    public partial class Login : Form
+    public partial class LOGINSALIDA : Form
     {
-        public Login()
+        public LOGINSALIDA()
         {
             InitializeComponent();
         }
 
-        public void loginAdministrativa()
+        private void btnVerificar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -31,9 +31,8 @@ namespace PROYECTO2_EmilyArcePicado
 
                 if (lector.HasRows == true)
                 {
-                    this.Hide();
-                    Administrativa oAdministrativa = new Administrativa();
-                    oAdministrativa.Show();
+                    
+                    Application.Exit();
                 }
                 else
                 {
@@ -45,19 +44,13 @@ namespace PROYECTO2_EmilyArcePicado
             {
                 MessageBox.Show("ERROR");
             }
+        
+           
         }
 
-        private void btnIngresar_Click(object sender, EventArgs e)
+        private void LOGINSALIDA_Load(object sender, EventArgs e)
         {
-            loginAdministrativa();
-            
-        }
 
-        private void Login_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            this.Hide();
-            VentanaPrincipal oVentanaPrincipal = new VentanaPrincipal();
-            oVentanaPrincipal.Show();
         }
     }
 }

@@ -28,10 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegistroDeMarcas = new System.Windows.Forms.Button();
-            this.btnAdministrativa = new System.Windows.Forms.Button();
             this.lbVentanaPrincipal = new System.Windows.Forms.Label();
+            this.btnAdministrativa = new System.Windows.Forms.Button();
+            this.btnRegistroDeMarcas = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // lbVentanaPrincipal
+            // 
+            this.lbVentanaPrincipal.AutoSize = true;
+            this.lbVentanaPrincipal.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVentanaPrincipal.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
+            this.lbVentanaPrincipal.Location = new System.Drawing.Point(173, 9);
+            this.lbVentanaPrincipal.Name = "lbVentanaPrincipal";
+            this.lbVentanaPrincipal.Size = new System.Drawing.Size(261, 26);
+            this.lbVentanaPrincipal.TabIndex = 2;
+            this.lbVentanaPrincipal.Text = "RECURSOS HUMANOS ";
+            // 
+            // btnAdministrativa
+            // 
+            this.btnAdministrativa.BackColor = System.Drawing.Color.White;
+            this.btnAdministrativa.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministrativa.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
+            this.btnAdministrativa.Location = new System.Drawing.Point(331, 129);
+            this.btnAdministrativa.Name = "btnAdministrativa";
+            this.btnAdministrativa.Size = new System.Drawing.Size(208, 81);
+            this.btnAdministrativa.TabIndex = 1;
+            this.btnAdministrativa.Text = "ADMINISTRATIVA";
+            this.btnAdministrativa.UseVisualStyleBackColor = false;
+            this.btnAdministrativa.Click += new System.EventHandler(this.btnAdministrativa_Click);
             // 
             // btnRegistroDeMarcas
             // 
@@ -40,48 +64,25 @@
             this.btnRegistroDeMarcas.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistroDeMarcas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRegistroDeMarcas.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
-            this.btnRegistroDeMarcas.Location = new System.Drawing.Point(67, 129);
+            this.btnRegistroDeMarcas.Location = new System.Drawing.Point(29, 129);
             this.btnRegistroDeMarcas.Name = "btnRegistroDeMarcas";
             this.btnRegistroDeMarcas.Size = new System.Drawing.Size(226, 81);
             this.btnRegistroDeMarcas.TabIndex = 0;
             this.btnRegistroDeMarcas.Text = "REGISTO DE MARCAS";
             this.btnRegistroDeMarcas.UseVisualStyleBackColor = false;
-            // 
-            // btnAdministrativa
-            // 
-            this.btnAdministrativa.BackColor = System.Drawing.Color.White;
-            this.btnAdministrativa.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdministrativa.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
-            this.btnAdministrativa.Location = new System.Drawing.Point(370, 129);
-            this.btnAdministrativa.Name = "btnAdministrativa";
-            this.btnAdministrativa.Size = new System.Drawing.Size(208, 81);
-            this.btnAdministrativa.TabIndex = 1;
-            this.btnAdministrativa.Text = "ADMINISTRATIVA";
-            this.btnAdministrativa.UseVisualStyleBackColor = false;
-            this.btnAdministrativa.Click += new System.EventHandler(this.btnAdministrativa_Click);
-            // 
-            // lbVentanaPrincipal
-            // 
-            this.lbVentanaPrincipal.AutoSize = true;
-            this.lbVentanaPrincipal.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVentanaPrincipal.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
-            this.lbVentanaPrincipal.Location = new System.Drawing.Point(207, 9);
-            this.lbVentanaPrincipal.Name = "lbVentanaPrincipal";
-            this.lbVentanaPrincipal.Size = new System.Drawing.Size(261, 26);
-            this.lbVentanaPrincipal.TabIndex = 2;
-            this.lbVentanaPrincipal.Text = "RECURSOS HUMANOS ";
+            this.btnRegistroDeMarcas.Click += new System.EventHandler(this.btnRegistroDeMarcas_Click);
             // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 331);
+            this.ClientSize = new System.Drawing.Size(565, 265);
             this.Controls.Add(this.lbVentanaPrincipal);
             this.Controls.Add(this.btnAdministrativa);
             this.Controls.Add(this.btnRegistroDeMarcas);
             this.Name = "VentanaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "VENTANA PRINCIPAL";
             this.Load += new System.EventHandler(this.VentanaPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

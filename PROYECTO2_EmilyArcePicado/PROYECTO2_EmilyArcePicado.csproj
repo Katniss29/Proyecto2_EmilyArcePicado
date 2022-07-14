@@ -97,6 +97,12 @@
     <Compile Include="Administrativa.Designer.cs">
       <DependentUpon>Administrativa.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginSalida.Designer.cs">
+      <DependentUpon>LoginSalida.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administrativa.resx">
+      <DependentUpon>Administrativa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginSalida.resx">
+      <DependentUpon>LoginSalida.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +143,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegistroDeMarcas.resx">
+      <DependentUpon>RegistroDeMarcas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
