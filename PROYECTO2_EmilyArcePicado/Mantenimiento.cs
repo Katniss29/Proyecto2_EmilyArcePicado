@@ -15,6 +15,7 @@ namespace PROYECTO2_EmilyArcePicado
         public Mantenimiento()
         {
             InitializeComponent();
+           
         }
 
         private void MANTENIMIENTO_Load(object sender, EventArgs e)
