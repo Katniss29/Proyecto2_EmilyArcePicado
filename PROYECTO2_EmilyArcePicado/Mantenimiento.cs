@@ -43,5 +43,12 @@ namespace PROYECTO2_EmilyArcePicado
             CrudDepartamentos oCrudDepartamentos = new CrudDepartamentos();
             oCrudDepartamentos.Show();
         }
+
+        private void btnDiasFeriados_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CrudDiasFeriados oCrudDiasFeriados = new CrudDiasFeriados();
+            oCrudDiasFeriados.Show();
+        }
     }
 }

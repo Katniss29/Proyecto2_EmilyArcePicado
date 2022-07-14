@@ -143,7 +143,7 @@
             this.lbMantenimientoDepartamentos.AutoSize = true;
             this.lbMantenimientoDepartamentos.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMantenimientoDepartamentos.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
-            this.lbMantenimientoDepartamentos.Location = new System.Drawing.Point(203, 9);
+            this.lbMantenimientoDepartamentos.Location = new System.Drawing.Point(442, 9);
             this.lbMantenimientoDepartamentos.Name = "lbMantenimientoDepartamentos";
             this.lbMantenimientoDepartamentos.Size = new System.Drawing.Size(435, 23);
             this.lbMantenimientoDepartamentos.TabIndex = 0;

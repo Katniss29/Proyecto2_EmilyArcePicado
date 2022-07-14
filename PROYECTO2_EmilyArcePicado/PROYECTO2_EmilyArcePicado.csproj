@@ -109,6 +109,12 @@
     <Compile Include="CrudDepartamentos.Designer.cs">
       <DependentUpon>CrudDepartamentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrudDiasFeriados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudDiasFeriados.Designer.cs">
+      <DependentUpon>CrudDiasFeriados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimiento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CrudDepartamentos.resx">
       <DependentUpon>CrudDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudDiasFeriados.resx">
+      <DependentUpon>CrudDiasFeriados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrudEmpleados.resx">
       <DependentUpon>CrudEmpleados.cs</DependentUpon>
