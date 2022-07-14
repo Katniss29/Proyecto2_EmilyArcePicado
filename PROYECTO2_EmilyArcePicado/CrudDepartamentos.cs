@@ -146,7 +146,6 @@ namespace PROYECTO2_EmilyArcePicado
             }
         }
 
-
         //Button that is responsible for searching and loading the txtBox with the department that the user needs
         private void btnBuscarDepartamentos_Click(object sender, EventArgs e)
         {

@@ -68,6 +68,7 @@
             this.btnHorarios.TabIndex = 3;
             this.btnHorarios.Text = "MANTENIMIENTO DE LOS HORARIOS";
             this.btnHorarios.UseVisualStyleBackColor = true;
+            this.btnHorarios.Click += new System.EventHandler(this.btnHorarios_Click);
             // 
             // btnDiasFeriados
             // 
