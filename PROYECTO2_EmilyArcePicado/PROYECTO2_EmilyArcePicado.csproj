@@ -103,6 +103,12 @@
     <Compile Include="CrudEmpleados.Designer.cs">
       <DependentUpon>CrudEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrudDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudDepartamentos.Designer.cs">
+      <DependentUpon>CrudDepartamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimiento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administrativa.resx">
       <DependentUpon>Administrativa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudDepartamentos.resx">
+      <DependentUpon>CrudDepartamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrudEmpleados.resx">
       <DependentUpon>CrudEmpleados.cs</DependentUpon>

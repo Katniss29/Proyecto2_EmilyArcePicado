@@ -34,5 +34,10 @@ namespace PROYECTO2_EmilyArcePicado
             RegistroDeMarcas oRegistroDeMarcas = new RegistroDeMarcas();
             oRegistroDeMarcas.Show();
         }
+
+        private void VentanaPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

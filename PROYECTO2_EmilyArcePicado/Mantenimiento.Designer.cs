@@ -39,6 +39,7 @@
             // btnMantenimientoEmpleados
             // 
             this.btnMantenimientoEmpleados.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMantenimientoEmpleados.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.btnMantenimientoEmpleados.Location = new System.Drawing.Point(12, 65);
             this.btnMantenimientoEmpleados.Name = "btnMantenimientoEmpleados";
             this.btnMantenimientoEmpleados.Size = new System.Drawing.Size(247, 74);
@@ -50,16 +51,19 @@
             // btnDepartamentos
             // 
             this.btnDepartamentos.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDepartamentos.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.btnDepartamentos.Location = new System.Drawing.Point(288, 65);
             this.btnDepartamentos.Name = "btnDepartamentos";
             this.btnDepartamentos.Size = new System.Drawing.Size(290, 74);
             this.btnDepartamentos.TabIndex = 1;
             this.btnDepartamentos.Text = "MANTENIMIENTO DE LOS DEPARTAMENTOS";
             this.btnDepartamentos.UseVisualStyleBackColor = true;
+            this.btnDepartamentos.Click += new System.EventHandler(this.btnDepartamentos_Click);
             // 
             // btnDiasFeriados
             // 
             this.btnDiasFeriados.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiasFeriados.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.btnDiasFeriados.Location = new System.Drawing.Point(12, 182);
             this.btnDiasFeriados.Name = "btnDiasFeriados";
             this.btnDiasFeriados.Size = new System.Drawing.Size(247, 74);
@@ -70,6 +74,7 @@
             // btnHorarios
             // 
             this.btnHorarios.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHorarios.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.btnHorarios.Location = new System.Drawing.Point(288, 182);
             this.btnHorarios.Name = "btnHorarios";
             this.btnHorarios.Size = new System.Drawing.Size(290, 74);
@@ -80,6 +85,7 @@
             // btnDeducciones
             // 
             this.btnDeducciones.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeducciones.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.btnDeducciones.Location = new System.Drawing.Point(12, 293);
             this.btnDeducciones.Name = "btnDeducciones";
             this.btnDeducciones.Size = new System.Drawing.Size(247, 74);
@@ -90,6 +96,7 @@
             // btnMarcas
             // 
             this.btnMarcas.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMarcas.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.btnMarcas.Location = new System.Drawing.Point(288, 293);
             this.btnMarcas.Name = "btnMarcas";
             this.btnMarcas.Size = new System.Drawing.Size(290, 74);
@@ -112,7 +119,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mantenimiento";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Mantenimiento_FormClosing);
-            this.Load += new System.EventHandler(this.MANTENIMIENTO_Load);
             this.ResumeLayout(false);
 
         }

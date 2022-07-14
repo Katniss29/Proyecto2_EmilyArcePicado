@@ -18,6 +18,8 @@ namespace PROYECTO2_EmilyArcePicado
         public CrudEmpleados()
         {
             InitializeComponent();
+            Bitmap img = new Bitmap(Application.StartupPath + @"\img\fondo1.jpg");
+            this.BackgroundImage = img;
         }
 
         //Method to load the datagrid with the employees table
@@ -54,9 +56,9 @@ namespace PROYECTO2_EmilyArcePicado
                 if (validacionDeDatos() == true)
                 {
                     String cadena = "INSERT INTO EMPLEADOS(ID_EMPLEADOS,CEDULA, NOMBRE, APELLIDO1, APELLIDO2, DIRECCION, TELEFONO, SALARIO_HORAS) " +
-                        "VALUES('"+txtCodigoEmpleado.Text+"', "+txtCedula.Text+",'"+txtNombreEmpleado.Text+"', " +
-                        "'"+txtPrimerApellidoEmpleado.Text+"', '"+txtSegundoApellidoEmpleado.Text+"', '"+txtDireccionEmpleado.Text+"'," +
-                        " "+txtTelefonoEmpleado.Text+", "+txtSalarioHoras.Text+ ")";
+                        "VALUES('"+txtCodigoEmpleado.Text.ToUpper()+"', "+txtCedula.Text.ToUpper()+",'"+txtNombreEmpleado.Text.ToUpper()+"', " +
+                        "'"+txtPrimerApellidoEmpleado.Text.ToUpper()+"', '"+txtSegundoApellidoEmpleado.Text.ToUpper()+"', '"+txtDireccionEmpleado.Text.ToUpper()+"'," +
+                        " "+txtTelefonoEmpleado.Text.ToUpper()+", "+txtSalarioHoras.Text.ToUpper()+ ")";
 
 
                     CONEXION.conectarPostgresSQL();
@@ -69,17 +71,17 @@ namespace PROYECTO2_EmilyArcePicado
                     refrescar();
                     CONEXION.desconectarPostgresSQL();
 
-                    MessageBox.Show("Empleado insertado con exito");
+                    MessageBox.Show("EMPLEADO INSERTADO CON EXITO");
                 }
                 else
                 {
-                    MessageBox.Show("Error, ingrese los datos correctos");
+                    MessageBox.Show("ERROR, INGRESE LOS DATOS CORRECTOS");
                 }
 
             }
             catch (Exception)
             {
-                MessageBox.Show("Error, el empleado no se a logrado guardar");
+                MessageBox.Show("ERROR, EL EMPLEADO NO SE HA LOGRADO GUARDAR");
             }
         }
 
@@ -157,7 +159,7 @@ namespace PROYECTO2_EmilyArcePicado
             }
             catch (Exception)
             {
-                MessageBox.Show("ERROR, NO SE LOGRO ELIMINAR EL MEDICAMENTO");
+                MessageBox.Show("ERROR, NO SE LOGRO ELIMINAR EL EMPLEADO");
             }
         }
 
@@ -240,5 +242,11 @@ namespace PROYECTO2_EmilyArcePicado
                 MessageBox.Show("NO SE LOGRO MODIFICAR EL REGISTRO");
             }
         }
+
+        private void CrudEmpleados_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

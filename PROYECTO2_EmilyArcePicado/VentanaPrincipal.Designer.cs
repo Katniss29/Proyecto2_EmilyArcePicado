@@ -83,7 +83,7 @@
             this.Name = "VentanaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VENTANA PRINCIPAL";
-            this.Load += new System.EventHandler(this.VentanaPrincipal_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.VentanaPrincipal_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

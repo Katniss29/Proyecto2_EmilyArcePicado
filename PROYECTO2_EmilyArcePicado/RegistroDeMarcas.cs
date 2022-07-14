@@ -15,6 +15,8 @@ namespace PROYECTO2_EmilyArcePicado
         public RegistroDeMarcas()
         {
             InitializeComponent();
+            Bitmap img = new Bitmap(Application.StartupPath + @"\img\fondo1.jpg");
+            this.BackgroundImage = img;
         }
 
         //method that is responsible for closing the window and going to the exit login that can only be exited if it is an authorized user
@@ -24,5 +26,7 @@ namespace PROYECTO2_EmilyArcePicado
             LOGINSALIDA oLoginSalida = new LOGINSALIDA();
             oLoginSalida.Show();
         }
+
+       
     }
 }

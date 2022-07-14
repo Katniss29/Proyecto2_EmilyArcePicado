@@ -146,6 +146,7 @@
             // btnMostrar
             // 
             this.btnMostrar.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrar.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.btnMostrar.Location = new System.Drawing.Point(20, 639);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(159, 64);
@@ -158,6 +159,7 @@
             // 
             this.lbCodigo.AutoSize = true;
             this.lbCodigo.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCodigo.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.lbCodigo.Location = new System.Drawing.Point(28, 112);
             this.lbCodigo.Name = "lbCodigo";
             this.lbCodigo.Size = new System.Drawing.Size(87, 23);
@@ -168,6 +170,7 @@
             // 
             this.lbPrimerApellido.AutoSize = true;
             this.lbPrimerApellido.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrimerApellido.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.lbPrimerApellido.Location = new System.Drawing.Point(28, 253);
             this.lbPrimerApellido.Name = "lbPrimerApellido";
             this.lbPrimerApellido.Size = new System.Drawing.Size(189, 23);
@@ -178,6 +181,7 @@
             // 
             this.lbSegundoApellido.AutoSize = true;
             this.lbSegundoApellido.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSegundoApellido.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.lbSegundoApellido.Location = new System.Drawing.Point(28, 309);
             this.lbSegundoApellido.Name = "lbSegundoApellido";
             this.lbSegundoApellido.Size = new System.Drawing.Size(206, 23);
@@ -188,6 +192,7 @@
             // 
             this.lbNombre.AutoSize = true;
             this.lbNombre.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombre.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.lbNombre.Location = new System.Drawing.Point(28, 205);
             this.lbNombre.Name = "lbNombre";
             this.lbNombre.Size = new System.Drawing.Size(95, 23);
@@ -198,6 +203,7 @@
             // 
             this.lbDireccion.AutoSize = true;
             this.lbDireccion.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDireccion.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.lbDireccion.Location = new System.Drawing.Point(28, 360);
             this.lbDireccion.Name = "lbDireccion";
             this.lbDireccion.Size = new System.Drawing.Size(120, 23);
@@ -209,6 +215,7 @@
             // 
             this.lbTelefono.AutoSize = true;
             this.lbTelefono.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTelefono.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.lbTelefono.Location = new System.Drawing.Point(28, 411);
             this.lbTelefono.Name = "lbTelefono";
             this.lbTelefono.Size = new System.Drawing.Size(115, 23);
@@ -219,6 +226,7 @@
             // 
             this.lbSalarioHoras.AutoSize = true;
             this.lbSalarioHoras.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSalarioHoras.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.lbSalarioHoras.Location = new System.Drawing.Point(28, 461);
             this.lbSalarioHoras.Name = "lbSalarioHoras";
             this.lbSalarioHoras.Size = new System.Drawing.Size(210, 23);
@@ -229,6 +237,7 @@
             // 
             this.lbPrincipalEmpleados.AutoSize = true;
             this.lbPrincipalEmpleados.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrincipalEmpleados.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.lbPrincipalEmpleados.Location = new System.Drawing.Point(479, 9);
             this.lbPrincipalEmpleados.Name = "lbPrincipalEmpleados";
             this.lbPrincipalEmpleados.Size = new System.Drawing.Size(380, 23);
@@ -287,6 +296,7 @@
             // btnInsertarEmpleados
             // 
             this.btnInsertarEmpleados.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertarEmpleados.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.btnInsertarEmpleados.Location = new System.Drawing.Point(351, 639);
             this.btnInsertarEmpleados.Name = "btnInsertarEmpleados";
             this.btnInsertarEmpleados.Size = new System.Drawing.Size(159, 64);
@@ -306,6 +316,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.label1.Location = new System.Drawing.Point(28, 157);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 23);
@@ -324,6 +335,7 @@
             // 
             this.lbCedulaEliminar.AutoSize = true;
             this.lbCedulaEliminar.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCedulaEliminar.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.lbCedulaEliminar.Location = new System.Drawing.Point(855, 538);
             this.lbCedulaEliminar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCedulaEliminar.Name = "lbCedulaEliminar";
@@ -335,6 +347,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.label2.Location = new System.Drawing.Point(635, 473);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -345,6 +358,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.btnEliminar.Location = new System.Drawing.Point(700, 639);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(159, 64);
@@ -356,6 +370,7 @@
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.btnModificar.Location = new System.Drawing.Point(1064, 639);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(159, 64);
@@ -376,6 +391,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.label3.Location = new System.Drawing.Point(834, 178);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -387,7 +403,8 @@
             // 
             this.lbModificar.AutoSize = true;
             this.lbModificar.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbModificar.Location = new System.Drawing.Point(614, 111);
+            this.lbModificar.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
+            this.lbModificar.Location = new System.Drawing.Point(635, 65);
             this.lbModificar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbModificar.Name = "lbModificar";
             this.lbModificar.Size = new System.Drawing.Size(597, 23);
@@ -397,6 +414,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
             this.btnBuscar.Location = new System.Drawing.Point(1106, 157);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
@@ -445,7 +463,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crud Empleados";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CrudEmpleados_FormClosing);
-            
+            this.Load += new System.EventHandler(this.CrudEmpleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

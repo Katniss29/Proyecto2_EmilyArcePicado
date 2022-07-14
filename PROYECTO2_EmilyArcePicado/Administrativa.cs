@@ -29,11 +29,26 @@ namespace PROYECTO2_EmilyArcePicado
 
 
         //Method that closes the window and opens the CRUD window
-        private void btnMantenimiento_Click(object sender, EventArgs e)
+        private void btnMantenimiento_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             Mantenimiento oManteminiento = new Mantenimiento();
             oManteminiento.Show();
+
         }
+
+
+
+        private void Administrativa_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProcesosEspecificos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

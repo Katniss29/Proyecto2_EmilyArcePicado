@@ -36,5 +36,12 @@ namespace PROYECTO2_EmilyArcePicado
             Administrativa oAdministrativa = new Administrativa();
             oAdministrativa.Show();
         }
+
+        private void btnDepartamentos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CrudDepartamentos oCrudDepartamentos = new CrudDepartamentos();
+            oCrudDepartamentos.Show();
+        }
     }
 }
