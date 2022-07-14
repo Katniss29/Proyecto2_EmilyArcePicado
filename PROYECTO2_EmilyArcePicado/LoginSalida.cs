@@ -19,6 +19,7 @@ namespace PROYECTO2_EmilyArcePicado
             InitializeComponent();
         }
 
+        //button that is responsible for verifying that he is an authorized user to be able to go to the main screen
         private void btnVerificar_Click(object sender, EventArgs e)
         {
             try
@@ -50,9 +51,6 @@ namespace PROYECTO2_EmilyArcePicado
            
         }
 
-        private void LOGINSALIDA_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

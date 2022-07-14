@@ -12,6 +12,7 @@ namespace PROYECTO2_EmilyArcePicado
 {
     public partial class Mantenimiento : Form
     {
+        //The image used in the background is loaded
         public Mantenimiento()
         {
             InitializeComponent();
@@ -20,11 +21,7 @@ namespace PROYECTO2_EmilyArcePicado
 
         }
 
-        private void MANTENIMIENTO_Load(object sender, EventArgs e)
-        {
-            
-        }
-
+        //Button that is responsible for closing the window and opening the crud employees
         private void btnMantenimientoEmpleados_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -32,6 +29,7 @@ namespace PROYECTO2_EmilyArcePicado
             oCrudEmpleados.Show();
         }
 
+        //method to exit and return to the administrative screen
         private void Mantenimiento_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();

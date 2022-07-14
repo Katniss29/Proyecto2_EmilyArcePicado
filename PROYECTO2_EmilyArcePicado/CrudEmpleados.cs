@@ -19,6 +19,8 @@ namespace PROYECTO2_EmilyArcePicado
         {
             InitializeComponent();
         }
+
+        //Method to load the datagrid with the employees table
         public void cargarGridDatosEstudiantes(DataTable informacionEstudiantes)
         {
             dataGridView1.Rows.Clear();
@@ -35,17 +37,16 @@ namespace PROYECTO2_EmilyArcePicado
                 dataGridView1.Rows[indice].Cells[7].Value = informacionEstudiantes.Rows[i]["SALARIO_HORAS"];
             }
         }
+
+        //Method to load the attributes of the table used and enter them in an array and thus load it to the dataGit
         public void refrescar()
         {
             String[] datos = { "id_empleados", "cedula" ,"nombre", "apellido1", "apellido2", "direccion", "telefono", "salario_horas" };
             DataTable informacionEstudiante = NEGOCIO.consultarTodosElementos("empleados", datos);
             cargarGridDatosEstudiantes(informacionEstudiante);
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            refrescar();
-        }
 
+        //button that is responsible for inserting new employees
         private void btnInsertarEmpleados_Click(object sender, EventArgs e)
         {
             try
@@ -82,6 +83,7 @@ namespace PROYECTO2_EmilyArcePicado
             }
         }
 
+        //button that is responsible for cleaning the textBox
         public void limpiarDatos()
 
         {
@@ -96,6 +98,7 @@ namespace PROYECTO2_EmilyArcePicado
             txtSalarioHoras.Text = "";
         }
 
+        //button that is responsible for validating that all the data were filled and correct
         public bool validacionDeDatos()
         {
             bool datosCorrectos = true;
@@ -137,6 +140,7 @@ namespace PROYECTO2_EmilyArcePicado
             return datosCorrectos;
         }
 
+        //button that is responsible for removing the desired employees
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             try
@@ -157,6 +161,7 @@ namespace PROYECTO2_EmilyArcePicado
             }
         }
 
+        //button that is responsible for searching for the employee to be modified and loading the textBox with the data that corresponds to that employee
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             try
@@ -194,15 +199,30 @@ namespace PROYECTO2_EmilyArcePicado
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        //Method that is responsible for closing the screen and returning maintenance screen
+        private void CrudEmpleados_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            Mantenimiento oMantenimiento = new Mantenimiento();
+            oMantenimiento.Show();
+        }
+
+        //button where the refresh method is executed that helps to see the data in the database
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            refrescar();
+        }
+
+        //button that is responsible for modifying the employee
+        private void btnModificar_Click(object sender, EventArgs e)
         {
             try
             {
                 CONEXION.conectarPostgresSQL();
 
-                String modificar = "update empleados set id_empleados = "+ txtCodigoEmpleado.Text+", cedula = "+ txtCedula.Text+",nombre = '"+txtNombreEmpleado.Text +"', " +
+                String modificar = "update empleados set id_empleados = " + txtCodigoEmpleado.Text + ", cedula = " + txtCedula.Text + ",nombre = '" + txtNombreEmpleado.Text + "', " +
                     " apellido1 = '" + txtPrimerApellidoEmpleado.Text + "', apellido2 = '" + txtSegundoApellidoEmpleado.Text + "'," +
-                    "direccion = '" + txtDireccionEmpleado.Text + "', telefono = " + txtTelefonoEmpleado.Text + ", salario_horas = '" +txtSalarioHoras.Text+ "' where id_empleados = " + txtCodigoEmpleado.Text + "";
+                    "direccion = '" + txtDireccionEmpleado.Text + "', telefono = " + txtTelefonoEmpleado.Text + ", salario_horas = '" + txtSalarioHoras.Text + "' where id_empleados = " + txtCodigoEmpleado.Text + "";
                 NpgsqlCommand comando = new NpgsqlCommand(modificar, CONEXION.conexion);
                 int cantidad;
                 cantidad = comando.ExecuteNonQuery();
@@ -214,18 +234,11 @@ namespace PROYECTO2_EmilyArcePicado
                 limpiarDatos();
 
                 CONEXION.desconectarPostgresSQL();
-            }catch (Exception)
+            }
+            catch (Exception)
             {
                 MessageBox.Show("NO SE LOGRO MODIFICAR EL REGISTRO");
             }
-            
-        }
-
-        private void CrudEmpleados_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            this.Hide();
-            Mantenimiento oMantenimiento = new Mantenimiento();
-            oMantenimiento.Show();
         }
     }
 }

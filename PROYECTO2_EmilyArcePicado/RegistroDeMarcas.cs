@@ -17,11 +17,7 @@ namespace PROYECTO2_EmilyArcePicado
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
-
+        //method that is responsible for closing the window and going to the exit login that can only be exited if it is an authorized user
         private void RegistroDeMarcas_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();

@@ -19,8 +19,7 @@ namespace PROYECTO2_EmilyArcePicado
             this.BackgroundImage = imge;
         }
 
-      
-
+        //screen output method
         private void Administrativa_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
@@ -28,11 +27,8 @@ namespace PROYECTO2_EmilyArcePicado
             oVentanaPrincipal.Show();
         }
 
-        private void Administrativa_Load(object sender, EventArgs e)
-        {
 
-        }
-
+        //Method that closes the window and opens the CRUD window
         private void btnMantenimiento_Click(object sender, EventArgs e)
         {
             this.Hide();

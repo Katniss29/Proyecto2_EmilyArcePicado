@@ -19,11 +19,7 @@ namespace PROYECTO2_EmilyArcePicado
             this.BackgroundImage = img;
         }
 
-        private void VentanaPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        //Button that goes to the login and windows that only authorized users can enter
         private void btnAdministrativa_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -31,6 +27,7 @@ namespace PROYECTO2_EmilyArcePicado
             oLogin.Show();
         }
 
+        //Button that goes to the brands of the employees
         private void btnRegistroDeMarcas_Click(object sender, EventArgs e)
         {
             this.Hide();

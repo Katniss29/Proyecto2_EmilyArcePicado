@@ -109,7 +109,6 @@
             this.Name = "LOGINSALIDA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN SALIDA";
-            this.Load += new System.EventHandler(this.LOGINSALIDA_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

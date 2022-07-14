@@ -19,6 +19,7 @@ namespace PROYECTO2_EmilyArcePicado
             InitializeComponent();
         }
 
+        //method that is responsible for verifying that the user is registered in the database
         public void loginAdministrativa()
         {
             try
@@ -47,12 +48,14 @@ namespace PROYECTO2_EmilyArcePicado
             }
         }
 
+        //button that is responsible for executing the loginAdminsitrador method
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             loginAdministrativa();
             
         }
 
+        //method that is responsible for closing the window and opening the main window
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
@@ -60,9 +63,6 @@ namespace PROYECTO2_EmilyArcePicado
             oVentanaPrincipal.Show();
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

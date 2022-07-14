@@ -89,7 +89,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADMINISTRATIVA";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Administrativa_FormClosing);
-            this.Load += new System.EventHandler(this.Administrativa_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

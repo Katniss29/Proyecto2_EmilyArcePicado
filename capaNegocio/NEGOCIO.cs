@@ -10,6 +10,8 @@ namespace capaNegocio
 {
     public class NEGOCIO
     {
+
+        //Method to query all items
         public static DataTable consultarTodosElementos(String table, String[] datos)
         {
             String campo = "SELECT ";

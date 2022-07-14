@@ -85,7 +85,6 @@
             this.Name = "RegistroDeMarcas";
             this.Text = "REGISTRO DE MARCAS";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RegistroDeMarcas_FormClosing);
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -37,7 +37,7 @@
             this.clmDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmSalariosHoras = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnMostrar = new System.Windows.Forms.Button();
             this.lbCodigo = new System.Windows.Forms.Label();
             this.lbPrimerApellido = new System.Windows.Forms.Label();
             this.lbSegundoApellido = new System.Windows.Forms.Label();
@@ -60,7 +60,7 @@
             this.lbCedulaEliminar = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.txtCodigoModificar = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lbModificar = new System.Windows.Forms.Label();
@@ -143,16 +143,16 @@
             this.clmSalariosHoras.Name = "clmSalariosHoras";
             this.clmSalariosHoras.Width = 125;
             // 
-            // button1
+            // btnMostrar
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(20, 639);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 64);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "MOSTRAR EMPLEADOS";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnMostrar.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrar.Location = new System.Drawing.Point(20, 639);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(159, 64);
+            this.btnMostrar.TabIndex = 1;
+            this.btnMostrar.Text = "MOSTRAR EMPLEADOS";
+            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
             // lbCodigo
             // 
@@ -353,16 +353,16 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // button2
+            // btnModificar
             // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1064, 639);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(159, 64);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "MODIFICAR EMPLEADO";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnModificar.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(1064, 639);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(159, 64);
+            this.btnModificar.TabIndex = 27;
+            this.btnModificar.Text = "MODIFICAR EMPLEADO";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // txtCodigoModificar
             // 
@@ -415,7 +415,7 @@
             this.Controls.Add(this.txtCodigoModificar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbModificar);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.txtCedulaEliminar);
             this.Controls.Add(this.lbCedulaEliminar);
@@ -438,13 +438,14 @@
             this.Controls.Add(this.lbSegundoApellido);
             this.Controls.Add(this.lbPrimerApellido);
             this.Controls.Add(this.lbCodigo);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.dataGridView1);
             this.Name = "CrudEmpleados";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crud Empleados";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CrudEmpleados_FormClosing);
+            
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -454,7 +455,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.Label lbCodigo;
         private System.Windows.Forms.Label lbPrimerApellido;
         private System.Windows.Forms.Label lbSegundoApellido;
@@ -485,7 +486,7 @@
         private System.Windows.Forms.Label lbCedulaEliminar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.TextBox txtCodigoModificar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbModificar;
