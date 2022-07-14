@@ -22,6 +22,7 @@ namespace PROYECTO2_EmilyArcePicado
             this.BackgroundImage = img;
         }
 
+        //Method that is responsible for closing the window and opening the maintenance window
         private void CrudDepartamentos_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
@@ -29,6 +30,7 @@ namespace PROYECTO2_EmilyArcePicado
             oMantenimiento.Show();
         }
 
+        // method that is responsible for loading the dataGrit
         public void cargarGridDatosEstudiantes(DataTable informacionEstudiantes)
         {
             dataGridView1.Rows.Clear();
@@ -41,6 +43,7 @@ namespace PROYECTO2_EmilyArcePicado
             }
         }
 
+        //Method that allows to visualize the database in the dataGrid
         public void refrescar()
         {
             String[] datos = { "id_departamento",  "nombre"};
@@ -48,11 +51,13 @@ namespace PROYECTO2_EmilyArcePicado
             cargarGridDatosEstudiantes(informacionEstudiante);
         }
 
+        //Button that executes the refresh method, which is to display the data in the dataGrid
         private void btnMostrarDepartamentos_Click(object sender, EventArgs e)
         {
             refrescar();
         }
 
+        //button that is responsible for executing the code that inserts the departments
         private void btnInsertarDepartamento_Click(object sender, EventArgs e)
         {
             try
@@ -87,6 +92,7 @@ namespace PROYECTO2_EmilyArcePicado
             }
         }
 
+        //method that cleans the txtBox
         public void limpiarDatos()
 
         {
@@ -97,6 +103,7 @@ namespace PROYECTO2_EmilyArcePicado
             
         }
 
+        //Method that validates that the data is entered correctly
         public bool validacionDeDatos()
         {
             bool datosCorrectos = true;
@@ -113,6 +120,7 @@ namespace PROYECTO2_EmilyArcePicado
             return datosCorrectos;
         }
 
+        //Button that is responsible for modifying the departments
         private void btnModificarDepartamento_Click(object sender, EventArgs e)
         {
             try
@@ -138,6 +146,8 @@ namespace PROYECTO2_EmilyArcePicado
             }
         }
 
+
+        //Button that is responsible for searching and loading the txtBox with the department that the user needs
         private void btnBuscarDepartamentos_Click(object sender, EventArgs e)
         {
             try
@@ -169,6 +179,7 @@ namespace PROYECTO2_EmilyArcePicado
             }
         }
 
+        //Button that is responsible for removing the department that the user needs
         private void btnEliminarDepartamento_Click(object sender, EventArgs e)
         {
             try
