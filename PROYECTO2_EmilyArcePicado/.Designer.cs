@@ -30,8 +30,14 @@
         {
             this.lbRegistroDeMarcas = new System.Windows.Forms.Label();
             this.lbCedula = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.marcarRegistro = new System.Windows.Forms.Button();
+            this.webCam = new System.Windows.Forms.ComboBox();
+            this.btnGrabar = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtMarcar = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbRegistroDeMarcas
@@ -57,36 +63,80 @@
             this.lbCedula.Text = "CEDULA";
             this.lbCedula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // marcarRegistro
             // 
-            this.textBox1.Location = new System.Drawing.Point(72, 128);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 22);
-            this.textBox1.TabIndex = 2;
+            this.marcarRegistro.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.marcarRegistro.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
+            this.marcarRegistro.Location = new System.Drawing.Point(109, 189);
+            this.marcarRegistro.Name = "marcarRegistro";
+            this.marcarRegistro.Size = new System.Drawing.Size(158, 70);
+            this.marcarRegistro.TabIndex = 4;
+            this.marcarRegistro.Text = "MARCAR";
+            this.marcarRegistro.UseVisualStyleBackColor = true;
+            this.marcarRegistro.Click += new System.EventHandler(this.marcarRegistro_Click);
             // 
-            // button1
+            // webCam
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
-            this.button1.Location = new System.Drawing.Point(109, 189);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 70);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "MARCAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.webCam.FormattingEnabled = true;
+            this.webCam.Location = new System.Drawing.Point(429, 28);
+            this.webCam.Name = "webCam";
+            this.webCam.Size = new System.Drawing.Size(121, 24);
+            this.webCam.TabIndex = 5;
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabar.Image = global::PROYECTO2_EmilyArcePicado.Properties.Resources.fondo1;
+            this.btnGrabar.Location = new System.Drawing.Point(488, 339);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Size = new System.Drawing.Size(158, 70);
+            this.btnGrabar.TabIndex = 8;
+            this.btnGrabar.Text = "GRABAR";
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(592, 85);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(200, 191);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(349, 85);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(206, 191);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txtMarcar
+            // 
+            this.txtMarcar.Location = new System.Drawing.Point(100, 131);
+            this.txtMarcar.Name = "txtMarcar";
+            this.txtMarcar.Size = new System.Drawing.Size(205, 22);
+            this.txtMarcar.TabIndex = 9;
             // 
             // RegistroDeMarcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 299);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(814, 498);
+            this.Controls.Add(this.txtMarcar);
+            this.Controls.Add(this.btnGrabar);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.webCam);
+            this.Controls.Add(this.marcarRegistro);
             this.Controls.Add(this.lbCedula);
             this.Controls.Add(this.lbRegistroDeMarcas);
             this.Name = "RegistroDeMarcas";
             this.Text = "REGISTRO DE MARCAS";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RegistroDeMarcas_FormClosing);
+            this.Load += new System.EventHandler(this.RegistroDeMarcas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,7 +146,11 @@
 
         private System.Windows.Forms.Label lbRegistroDeMarcas;
         private System.Windows.Forms.Label lbCedula;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button marcarRegistro;
+        private System.Windows.Forms.ComboBox webCam;
+        private System.Windows.Forms.Button btnGrabar;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtMarcar;
     }
 }

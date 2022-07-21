@@ -223,5 +223,10 @@ namespace PROYECTO2_EmilyArcePicado
             oMantenimiento.Show();
 
         }
+
+        private void CrudDeducciones_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
