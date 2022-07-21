@@ -1,0 +1,138 @@
+CREATE DATABASE RECURSOSHUMANOS;
+
+CREATE TABLE DEPARTAMENTOS(
+    
+    ID_DEPARTAMENTO INT NOT NULL PRIMARY KEY,
+    NOMBRE VARCHAR(100)
+
+);
+
+CREATE TABLE DIAS_FERIADOS(
+    ID_DIAS_FERIADOS INT NOT NULL PRIMARY KEY,
+    DIAS_FERIADOS VARCHAR(250)
+
+);
+
+CREATE TABLE HORARIOS(
+    ID_HORARIOS INT NOT NULL PRIMARY KEY,
+    HORARIOS VARCHAR(250)
+
+);
+
+CREATE TABLE DEDUCCIONES(
+    ID_DEDUCCIONES INT NOT NULL PRIMARY KEY,
+    REBAJA_SALARIO DOUBLE PRECISION,
+    SALARIO_GANADO DOUBLE PRECISION,
+    CCSS DOUBLE PRECISION,
+    IVM DOUBLE PRECISION,
+    JUNTA_AHORRO DOUBLE PRECISION,
+    POLIZA DOUBLE PRECISION
+    
+);
+
+
+CREATE TABLE USUARIOS(
+
+    ID_USUARIOS INT NOT NULL PRIMARY KEY,
+    USUARIO VARCHAR(100),
+    CONTRASENA VARCHAR(10),
+    NOMBRE_USUARIO VARCHAR(70),
+    FECHA_CREACION VARCHAR(20),
+    HORA_CREACION VARCHAR(20)
+
+);
+
+
+
+drop table usuarios
+
+select * from usuarios where usuario = 'Katniss' and contrasena = '12345'
+
+insert into USUARIOS (ID_USUARIOS, USUARIO, CONTRASENA, NOMBRE_USUARIO, FECHA_CREACION, HORA_CREACION) 
+VALUES (1, 'Katniss', '12345', 'Emily', '13//7/2022', '10:30');
+
+SELECT * FROM USUARIOS
+
+-- falta 
+CREATE TABLE FOTOGRAFIA(
+    ID_FOTOGRAFIA INT NOT NULL PRIMARY KEY,
+    IMAGEN VARCHAR(250)
+
+);
+
+
+CREATE TABLE MARCAS(
+    ID_MARCA INT NOT NULL PRIMARY KEY,
+    FECHA VARCHAR(20),
+    HORA_ENTRADA VARCHAR(20),
+    HORA_SALIDA VARCHAR(20),
+    ESTADO VARCHAR(20),
+    ID_FOTOGRAFIA INT,
+    ID_EMPLEADOS INT 
+);
+
+--FALTA
+alter table MARCAS add constraint FKFotografia
+foreign key (ID_FOTOGRAFIA) references  FOTOGRAFIA (ID_FOTOGRAFIA)
+
+--LISTO
+alter table  MARCAS add constraint FKEmpleados
+foreign key (ID_EMPLEADOS) references EMPLEADOS (ID_EMPLEADOS)
+
+DROP TABLE MARCAS
+
+
+CREATE TABLE EMPLEADOS(
+    ID_EMPLEADOS INT NOT NULL PRIMARY KEY,
+    CEDULA INT,
+    NOMBRE VARCHAR(50),
+    APELLIDO1 VARCHAR(250),
+    APELLIDO2 VARCHAR(250),
+    DIRECCION VARCHAR(250), 
+    TELEFONO INT,
+    SALARIO_HORAS DOUBLE PRECISION,
+    ID_FOTOGRAFIA INT,
+    ID_DEPARTAMENTO INT,
+    ID_HORARIOS INT,
+    ID_DIAS_FERIADOS INT, 
+    ID_DEDUCCIONES INT
+);
+SELECT * FROM EMPLEADOS
+
+DROP TABLE EMPLEADOS
+alter table EMPLEADOS ADD COLUMN CEDULA INT 
+
+
+
+select * from empleados  where id_empleados = 1
+--FALTA
+alter table  EMPLEADOS add constraint FKFotografia
+foreign key (ID_FOTOGRAFIA)) references FOTOGRAFIA (ID_FOTOGRAFIA))
+
+alter table  EMPLEADOS add constraint FKDepartamento
+foreign key (ID_DEPARTAMENTO) references DEPARTAMENTOS (ID_DEPARTAMENTO)
+
+alter table  EMPLEADOS add constraint FKHorarios
+foreign key (ID_HORARIOS) references HORARIOS (ID_HORARIOS)
+
+alter table  EMPLEADOS add constraint FKDiasFeriados
+foreign key (ID_DIAS_FERIADOS) references DIAS_FERIADOS (ID_DIAS_FERIADOS)
+
+alter table  EMPLEADOS add constraint FKDeducciones
+foreign key (ID_DEDUCCIONES) references DEDUCCIONES (ID_DEDUCCIONES)
+
+ALTER TABLE marcas ADD COLUMN hora_salida_almuerzo varchar(20);
+ALTER TABLE marcas ADD COLUMN hora_salida_almuerzo varchar(20);
+
+
+
+update departamentos set id_departamento = 1, nombre = 'INFORMATICA'
+
+update dias_feriados set id_dias_feriados = 2, dias_feriados = 'RZAS' where id_dias_feriados = 2
+
+insert into dias_feriados (id_dias_feriados, dias_feriados) values (1, 'Dias del trabajador')
+insert into horarios (id_horarios, horarios) values (1, '7:00-3:00')
+insert into departamentos (id_departamento, nombre) values (1, 'Informatica')
+insert into EMPLEADOS (ID_EMPLEADOS,CEDULA ,NOMBRE, APELLIDO1, APELLIDO2,DIRECCION, TELEFONO, SALARIO_HORAS) 
+VALUES (1, 208340097,'Emily', 'Arce', 'Picado', 'Urbanizacion Santa Fe', 88889670, 1250);
+
